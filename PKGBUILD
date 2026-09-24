@@ -1,7 +1,7 @@
 # Maintainer: smtdfc <me.smtdfc@gmail.com>
 
 pkgname=bakeryos-plymouth-theme
-pkgver=1.0.3
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="Plymouth boot theme for BakeryOS"
 arch=('any')
