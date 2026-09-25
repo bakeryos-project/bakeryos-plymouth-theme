@@ -1,7 +1,7 @@
 # Maintainer: smtdfc <me.smtdfc@gmail.com>
 
 pkgname=bakeryos-plymouth-theme
-pkgver=1.1.0
+pkgver=1.1.1
 pkgrel=1
 pkgdesc="Plymouth boot theme for BakeryOS"
 arch=('any')
@@ -22,4 +22,5 @@ options=(!debug !strip)
 package() {
   install -d "${pkgdir}/usr/share/plymouth/themes"
   cp -a "${srcdir}/bakeryos" "${pkgdir}/usr/share/plymouth/themes/"
+  install -Dm644 "${startdir}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
